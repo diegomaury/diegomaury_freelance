@@ -1,0 +1,27 @@
+:root {
+  /* Colores de marca */
+  --catalyst-purple: #6C3EDC;
+  --electric-ember: #FF5C39;
+  --quantum-blue: #246BFD;
+  --mint-potential: #A6F0C6;
+  --color-texto: #1A1A1A;
+  --color-fondo: #ffffff;
+
+  /* Tipografías */
+  --fuente-tagline: 'Outfit', sans-serif;
+  --fuente-cuerpo: 'Inter', sans-serif;
+  --fuente-cita: 'Source Serif Pro', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-cuerpo);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
