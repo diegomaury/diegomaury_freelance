@@ -56,37 +56,36 @@ body {
 
 /* Hero */
 .hero {
-  background-color: var(--mint-potential);
-  padding: 6rem 2rem;
+  background-color: #ffffff;
+  padding: 5rem 2rem;
   text-align: center;
 }
 
 .hero-content {
-  max-width: 900px;
-  margin: auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.hero h2.tagline {
-  font-family: var(--fuente-tagline);
+.hero .tagline {
   font-size: 2.5rem;
+  font-family: 'Outfit', sans-serif;
   color: var(--catalyst-purple);
   margin-bottom: 1rem;
 }
 
-.hero p {
-  font-size: 1.125rem;
-  color: var(--color-texto);
-  line-height: 1.8;
+.hero .claim {
+  font-size: 1.25rem;
+  color: #444;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 2.5rem;
 }
-
-/* Botones */
 .hero-buttons {
-  margin-top: 2rem;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
+/* Botones */
 
 .btn {
   padding: 0.75rem 1.5rem;
@@ -252,4 +251,239 @@ body {
   font-family: var(--fuente-cuerpo);
   color: var(--color-texto);
   margin-bottom: 3rem;
+}
+.portafolio {
+  background-color: var(--mint-potential);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.portafolio .section-title {
+  color: var(--catalyst-purple);
+  font-family: var(--fuente-tagline);
+  font-size: 2rem;
+}
+
+.portafolio .intro-text {
+  font-size: 1.125rem;
+  color: var(--color-texto);
+  margin-bottom: 3rem;
+}
+
+.portafolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.proyecto {
+  background-color: #fff;
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.proyecto h3 {
+  color: var(--quantum-blue);
+  font-family: var(--fuente-tagline);
+  margin-bottom: 0.5rem;
+}
+
+.proyecto p {
+  font-family: var(--fuente-cuerpo);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.portafolio-cta {
+  margin-top: 3rem;
+}
+
+.mentoria {
+  background-color: #ffffff;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.mentoria .section-title {
+  color: var(--catalyst-purple);
+  font-family: var(--fuente-tagline);
+  font-size: 2rem;
+}
+
+.mentoria .intro-text {
+  font-size: 1.125rem;
+  color: var(--color-texto);
+  margin-bottom: 3rem;
+}
+
+.mentoria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.mentoria-card {
+  background-color: var(--mint-potential);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+}
+
+.mentoria-card h3 {
+  color: var(--quantum-blue);
+  font-family: var(--fuente-tagline);
+  margin-bottom: 0.5rem;
+}
+
+.mentoria-card p {
+  font-family: var(--fuente-cuerpo);
+  font-size: 1rem;
+}
+
+.mentoria-cta {
+  margin-top: 3rem;
+}
+.contacto {
+  background-color: var(--mint-potential);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contacto .section-title {
+  color: var(--catalyst-purple);
+  font-family: var(--fuente-tagline);
+  font-size: 2rem;
+}
+
+.contacto .intro-text {
+  font-size: 1.125rem;
+  color: var(--color-texto);
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacto-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn.whatsapp {
+  background-color: #25D366;
+  color: white;
+}
+
+.btn.secondary {
+  background-color: white;
+  border: 2px solid var(--electric-ember);
+  color: var(--electric-ember);
+}
+.footer {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-top: 1px solid #e0e0e0;
+  font-family: var(--fuente-cuerpo);
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.footer-left p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.footer-right a {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  color: var(--catalyst-purple);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-right a:hover {
+  color: var(--electric-ember);
+}
+
+.manifiesto {
+  background-color: #fefefe;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.manifiesto .section-title {
+  font-size: 2rem;
+  font-family: var(--fuente-tagline);
+  color: var(--catalyst-purple);
+  margin-bottom: 1rem;
+}
+
+.manifiesto .intro-text {
+  font-size: 1.125rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-family: var(--fuente-cuerpo);
+  color: #444;
+}
+
+.manifiesto-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: left;
+}
+
+.manifiesto-list li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
+  position: relative;
+  font-family: var(--fuente-cuerpo);
+}
+
+.manifiesto-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--electric-ember);
+  font-weight: bold;
+}
+.newsletter {
+  background-color: var(--mint-potential);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.newsletter .section-title {
+  font-size: 2rem;
+  font-family: var(--fuente-tagline);
+  color: var(--catalyst-purple);
+  margin-bottom: 1rem;
+}
+
+.newsletter .intro-text {
+  font-size: 1.125rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  font-family: var(--fuente-cuerpo);
+}
+.substack-embed {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
