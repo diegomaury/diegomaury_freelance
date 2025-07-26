@@ -1,13 +1,9 @@
 :root {
-  /* Colores de marca */
   --catalyst-purple: #6C3EDC;
   --electric-ember: #FF5C39;
   --quantum-blue: #246BFD;
   --mint-potential: #A6F0C6;
   --color-texto: #1A1A1A;
-  --color-fondo: #ffffff;
-
-  /* Tipografías */
   --fuente-tagline: 'Outfit', sans-serif;
   --fuente-cuerpo: 'Inter', sans-serif;
   --fuente-cita: 'Source Serif Pro', serif;
@@ -21,7 +17,239 @@
 
 body {
   font-family: var(--fuente-cuerpo);
-  background-color: var(--color-fondo);
+  background-color: #ffffff;
   color: var(--color-texto);
   line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--mint-potential);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-family: var(--fuente-tagline);
+  font-size: 1.5rem;
+  color: var(--catalyst-purple);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-texto);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--catalyst-purple);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--mint-potential);
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero h2.tagline {
+  font-family: var(--fuente-tagline);
+  font-size: 2.5rem;
+  color: var(--catalyst-purple);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  color: var(--color-texto);
+  line-height: 1.8;
+}
+
+/* Botones */
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn.primary {
+  background-color: var(--catalyst-purple);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #552dbb;
+}
+
+.btn.secondary {
+  background-color: var(--electric-ember);
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  background-color: #d8442a;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #777;
+  font-size: 0.9rem;
+}
+.quien-soy {
+  background-color: var(--mint-potential);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.quien-soy-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: var(--fuente-tagline);
+  font-size: 2rem;
+  color: var(--catalyst-purple);
+  margin-bottom: 2rem;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: var(--color-texto);
+  margin-bottom: 3rem;
+}
+
+.roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.rol {
+  flex: 1 1 280px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.rol h3 {
+  color: var(--quantum-blue);
+  font-family: var(--fuente-tagline);
+  margin-bottom: 1rem;
+}
+
+.rol p {
+  font-size: 1rem;
+  font-family: var(--fuente-cuerpo);
+}
+
+.cita {
+  font-family: var(--fuente-cita);
+  font-size: 1.3rem;
+  color: var(--electric-ember);
+  margin-top: 4rem;
+}
+.servicios {
+  background-color: var(--mint-potential);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.servicios-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.servicio-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+}
+
+.servicio-card .numero {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--electric-ember);
+}
+
+.servicio-card h3 {
+  margin: 0.5rem 0;
+  color: var(--catalyst-purple);
+  font-family: var(--fuente-tagline);
+}
+
+.servicio-card p {
+  font-size: 1rem;
+  font-family: var(--fuente-cuerpo);
+}
+
+.servicios-cta {
+  margin-top: 3rem;
+}
+
+.servicios-cta .btn {
+  font-size: 1rem;
+}
+.testimonios {
+  background-color: #ffffff;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.testimonios .section-title {
+  font-family: var(--fuente-tagline);
+  font-size: 2rem;
+  color: var(--quantum-blue);
+  margin-bottom: 1rem;
+}
+
+.testimonios .intro-text {
+  font-size: 1.125rem;
+  font-family: var(--fuente-cuerpo);
+  color: var(--color-texto);
+  margin-bottom: 3rem;
 }
