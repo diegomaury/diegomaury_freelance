@@ -8,6 +8,19 @@
   --fuente-cuerpo: 'Inter', sans-serif;
   --fuente-cita: 'Source Serif Pro', serif;
 }
+section.alt-bg-1 {
+  background-image: url('../assets/img/1.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.alt-bg-2 {
+  background-image: url('../assets/img/2.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 * {
   margin: 0;
