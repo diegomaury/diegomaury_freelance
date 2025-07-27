@@ -9,6 +9,7 @@
   <!-- Fuentes de marca -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Outfit:wght@700&family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/main.css" />
+  
 </head>
 <body>
 
@@ -27,15 +28,14 @@
   </header>
 
   <main>
-    <section id="inicio" class="hero">
+   <section id="inicio" class="hero fade-in">
+  <div class="hero-bg"></div> <!-- Fondo con imagen -->
   <div class="container hero-content">
     <h1 class="tagline">Impulsando innovación, talento y ecosistemas de impacto en América Latina.</h1>
-    <p class="claim">
-      Consultor estratégico en innovación social, transformación digital y emprendimiento sostenible.
-    </p>
+    <p class="claim">Consultor estratégico en innovación social, transformación digital y emprendimiento sostenible.</p>
     <div class="hero-buttons">
-      <a href="https://diegomaury.notion.site/portfolio" target="_blank" rel="noopener">Ver portafolio completo</a>
-      <a href="https://calendly.com/diegomaury/30min" target="_blank" rel="noopener">Agendar llamada</a>
+      <a href="https://diegomaury.notion.site/portfolio" target="_blank" rel="noopener" class="btn secondary">Ver portafolio completo</a>
+      <a href="https://calendly.com/diegomaury/30min" target="_blank" rel="noopener" class="btn primary">Agendar llamada</a>
     </div>
   </div>
 </section>
@@ -209,7 +209,8 @@
               height="320"
               style="border:1px solid #EEE; background:white; max-width: 100%; margin-top: 2rem;"
               frameborder="0"
-              scrolling="no">
+              scrolling="no"
+              title="Suscripción al boletín de Diego Maury">
       </iframe>
     </div>
   </div>
@@ -243,15 +244,9 @@
   </div>
 </footer>
 
+</main>
 
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Diego Maury. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
+<script src="scripts/main.js"></script>
 
 </body>
 </html>
